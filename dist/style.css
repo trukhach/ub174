@@ -143,9 +143,8 @@ button, select { cursor: pointer; }
 .card-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 13px; }
 .card { position: relative; display: flex; flex-direction: column; min-width: 0; overflow: hidden; background: var(--white); border: 1px solid var(--line); transition: border-color .24s ease; }
 .card:hover, .category-card:target { border-color: var(--metal); }
-.card-photo { aspect-ratio: 1.53; height: auto; background: var(--line); transition: transform .38s ease; }
-.card-media { position: relative; overflow: hidden; }
-.card:hover .card-photo, .service:hover .service-photo { transform: scale(1.04); }
+.card-media { position: relative; overflow: hidden; aspect-ratio: 1.53; background: #141613; }
+.service:hover .service-photo { transform: scale(1.04); }
 .card-copy { flex: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 9px; padding: clamp(13px, 1.65vw, 25px); min-width: 0; }
 .card-copy h3 { overflow-wrap: anywhere; }
 .category-card .link { margin-top: auto; }
@@ -164,7 +163,7 @@ button, select { cursor: pointer; }
 .service p, .stock-card p { color: var(--muted); font-size: .93rem; }
 .service .link, .stock-card .link { margin-top: auto; }
 .badge { display: inline-block; padding: 4px 8px; background: #efe8dc; color: #59422f; line-height: 1.45; font-size: .74rem; font-weight: 500; }
-.stock-card .card-photo { aspect-ratio: 1.65; }
+.stock-card .card-media { aspect-ratio: 1.65; }
 .about-img { height: auto; max-height: 540px; aspect-ratio: 1.14; }
 .about-media { min-width: 0; }
 .about-media figcaption { margin-top: 11px; font-size: .84rem; color: var(--muted); }
